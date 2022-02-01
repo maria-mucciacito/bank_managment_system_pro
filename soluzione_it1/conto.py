@@ -9,6 +9,6 @@ class Conto:
         self.operazioni_effettuate = []
 
     def __repr__(self):
-        return f"Conto {self.numero_conto}, intestato a cliente {self.cliente.nome_cliente}, con saldo {self.saldo}"
+        return f"Conto {self.numero_conto}, intestato a cliente {self.cliente.nome_cliente}, con saldo {self.saldo} €"
 
 

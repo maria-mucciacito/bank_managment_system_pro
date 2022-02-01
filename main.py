@@ -1,6 +1,6 @@
-from soluzione_it1.bank import Banca
-from soluzione_it1.conto import Conto
-from soluzione_it1.cliente import Cliente
+from soluzione_it2.bank import Banca
+from soluzione_it2.conto import Conto
+from soluzione_it2.cliente import Cliente
 
 
 #CODICE DI TEST. Rispondi alle domande scritte nei commenti 
@@ -15,4 +15,5 @@ print(banca_san_paolo)
 print(cliente1)
 
 print( cliente1.nome_cliente )
-print(account.cliente.nome_cliente) 
+print(account.cliente.nome_cliente)
+
