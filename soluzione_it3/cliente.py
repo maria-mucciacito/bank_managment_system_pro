@@ -3,19 +3,17 @@
 
 class Cliente:
 
-    def __init__(self,id,nome_cliente,numero_telefono):
-        self.__id = id
+    def __init__(self,nome_cliente,numero_telefono):
+        self.__id = id(self)
         self.__nome_cliente = nome_cliente
         self.__numero_telefono = numero_telefono
 
     def __repr__(self):
-        return f"Cliente {self.nome_cliente} telefono {self.numero_telefono}"
+        return f"Id {self.id} Cliente {self.nome_cliente} telefono {self.numero_telefono}"
 
     def __get_id(self):
         return self.__id
-    def __set_id(self,id):
-        self.__id = id
-    id = property(__get_id,__set_id)
+    id = property(__get_id,)
 
     def __get_nome_cliente(self):
         return self.__nome_cliente
@@ -30,3 +28,4 @@ class Cliente:
         self.__numero_telefono = numero_telefono
     
     numero_telefono = property(__get_numero_telefono,__set_numero_telefono)
+

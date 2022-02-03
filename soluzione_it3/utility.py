@@ -3,7 +3,8 @@ class Utility:
     @staticmethod
     def is_integer(num):
         try:
-            int(num)
-            return True
+            if (num - int(num)) == 0:
+                return True
+            return False
         except ValueError:
             return False

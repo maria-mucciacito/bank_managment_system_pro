@@ -43,7 +43,7 @@ class Conto:
 
     def preleva_soldi(self,value):
         if (value > self.__saldo):
-            raise 'impossibile prelevare'
+            print('Importo richiesto non presente sul conto')
         else:
             self.__saldo = self.__saldo - value
 
