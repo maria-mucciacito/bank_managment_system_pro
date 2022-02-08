@@ -47,7 +47,7 @@ class Banca:
         self.conti_correnti = conti_correnti
 
     def __repr__(self):
-        return "Nome banca " + self.nome_banca + " numero totale di clienti " + str(len(self.clienti)) + " numero totale di conti correnti: " + str(len(self.conti_correnti)) + " nazione" + self.nazione  
+        return "Nome banca " + self.nome_banca + " numero totale di clienti " + str(len(self.clienti)) + " numero totale di conti correnti: " + str(len(self.conti_correnti)) + " nazione " + self.nazione  
 
     def aggiungi_cliente(self, cliente): 
         self.clienti.append(cliente)
@@ -88,5 +88,3 @@ class Banca:
             print("conto corrente numero " + str(numero_conto) + " rimosso con successo")
 
 
-b = Banca('hd')
-print(b)

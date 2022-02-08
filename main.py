@@ -93,7 +93,7 @@ print(Utility.is_integer('5.8'))'''
 from soluzione_it4.cliente import Cliente
 from soluzione_it4.bank import Banca
 from soluzione_it4.conto import Conto
-from soluzione_it4.conto import ContoSpecial
+from soluzione_it4.conto import Contospecial
 
 # CODICE DI TEST. Rispondi alle domande scritte nei commenti #
 cliente1 = Cliente('Davide', '3924663077')
@@ -103,10 +103,10 @@ cliente3 = Cliente('Marco', '3335688285')
 banca_san_paolo = Banca('Banca San Paolo')
 banca_fineco = Banca('Banca San Paolo', 'GE')
 
-conto1 = ContoSpecial(1587,cliente1)
-conto2 = ContoSpecial(1588,cliente1)
-conto3 = ContoSpecial(1685,cliente2)
-conto4 = ContoSpecial(1987,cliente3)
+conto1 = Contospecial(1587,cliente1)
+conto2 = Contospecial(1588,cliente1)
+conto3 = Contospecial(1685,cliente2)
+conto4 = Contospecial(1987,cliente3)
 
 banca_san_paolo.aggiungi_cliente(cliente1)
 banca_san_paolo.aggiungi_cliente(cliente2)
