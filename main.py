@@ -137,6 +137,7 @@ print('saldo: ' + str(conto1.saldo))
 #3. SCRIVI OUTPUT PREVISTO:
 conto1.preleva_soldi(150)
 print('saldo: ' + str(conto1.saldo)) 
+print(conto1.data_inizio_debito)
 
 
 #3. SCRIVI OUTPUT PREVISTO:
@@ -154,7 +155,7 @@ print(banca_fineco.nazione)
 banca_fineco.nazione = 'SP'
 print(banca_fineco) 
 
-
+print(conto1.data_inizio_debito)
 
 #7. SCRIVI OUTPUT PREVISTO:
 #print(banca_fineco.__nazione) 

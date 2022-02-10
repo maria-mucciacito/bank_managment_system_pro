@@ -59,22 +59,22 @@ import datetime
 
 class Contospecial(Conto):
     tassa_prelievo = 2.00
-    data_inizio_debito = None
 
     def __init__(self, numero_conto, cliente, saldo=0):
         super().__init__(numero_conto, cliente, saldo)
+        self.data_inizio_debito = None
 
     
     def preleva_soldi(self, value): 
         value += self.tassa_prelievo
         self.saldo -= value
-        if (self.saldo < 0):
-            if (self.data_inizio_debito == None):
-                self.data_inizio_debito = datetime.datetime.now()
         print(f'Hai prelevato é {value}. Nuovo saldo del conto: {self.saldo}')
+        if (self.saldo < 0 and self.data_inizio_debito == None):
+            self.data_inizio_debito = datetime.now()
+       
 
     def versa_soldi(self, value):
-        return super().versa_soldi(value)
-        if (self.saldo >= 0):
+        super().versa_soldi(value)
+        if (self.saldo >= 0 and self.data_inizio_debito != None):
             self.data_inizio_debito = None
             print('Il saldo è tornato positivo')
